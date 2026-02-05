@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.iairydev.matsurat" version="1.1.0"
+    xmlns="http://www.w3.org/ns/widgets"
+    xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>simple matsurat</name>
+    <description>
+        simple matsurat application
+    </description>
+    <author email="iairydev@gmail.com" href="http://www.iaiapps.xyz">
+        Lontarnesia
+    </author>
+    <content src="index.html" />
+    <access origin="*" subdomains="true"/>
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <preference name="SplashMaintainAspectRatio" value="true"/>
+        <preference name="SplashShowOnlyFirstTime" value="true"/>
+        <!-- Needed for Android 12 -->
+        <preference name="AndroidWindowSplashScreenAnimatedIcon" value="assets/res/screen/android/splash-square.png"/>
+        <preference name="AndroidWindowSplashScreenBackground" value="#0fa699"/>
+        <icon density="ldpi" src="assets/res/icon/android/ldpi.png"/>
+        <icon density="mdpi" src="assets/res/icon/android/mdpi.png"/>
+        <icon density="hdpi" src="assets/res/icon/android/hdpi.png"/>
+        <icon density="xhdpi" src="assets/res/icon/android/xhdpi.png"/>
+        <icon density="xxhdpi" src="assets/res/icon/android/xxhdpi.png"/>
+        <icon density="xxxhdpi" src="assets/res/icon/android/xxxhdpi.png"/>
+        <!-- Portrait -->
+        <splash density="port-ldpi" src="assets/res/screen/android/splash-port-ldpi.png"/>
+        <splash density="port-mdpi" src="assets/res/screen/android/splash-port-mdpi.png"/>
+        <splash density="port-hdpi" src="assets/res/screen/android/splash-port-hdpi.png"/>
+        <splash density="port-xhdpi" src="assets/res/screen/android/splash-port-xhdpi.png"/>
+        <splash density="port-xxhdpi" src="assets/res/screen/android/splash-port-xxhdpi.png"/>
+        <splash density="port-xxxhdpi" src="assets/res/screen/android/splash-port-xxxhdpi.png"/>
+    </platform>
+</widget>

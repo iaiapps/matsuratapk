@@ -1,0 +1,27 @@
+{
+  "name": "com.iairydev.matsurat",
+  "displayName": "Matsurat",
+  "version": "1.1.0",
+  "description": "simple matsurat application ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "iairydev",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-android": "^14.0.1",
+    "cordova-plugin-splashscreen": "^6.0.0"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-splashscreen": {}
+    },
+    "platforms": [
+      "android"
+    ]
+  }
+}

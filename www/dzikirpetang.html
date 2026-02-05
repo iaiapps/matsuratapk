@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dzikir Petang - Matsurat</title>
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+
+  <body>
+    <!-- <button
+      class="theme-toggle"
+      onclick="toggleTheme()"
+      aria-label="Toggle Theme"
+    >
+      <svg
+        class="sun-icon"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <circle cx="12" cy="12" r="4" />
+        <path
+          d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32l1.41-1.41"
+        />
+      </svg>
+      <svg
+        class="moon-icon"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+      </svg>
+    </button> -->
+
+    <div class="dzikir-container">
+      <div class="card dzikir-card">
+        <div class="card-header-nav">
+          <a href="index.html" class="back-button">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M19 12H5m7 7l-7-7 7-7" />
+            </svg>
+            <span>Beranda</span>
+          </a>
+          <h2 class="page-title">Dzikir Petang</h2>
+        </div>
+
+        <div class="dzikir-content">
+          <div class="dzikir-navigation">
+            <button class="btn-nav" id="prev">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M15 18l-6-6 6-6" />
+              </svg>
+              <span>Sebelumnya</span>
+            </button>
+            <button class="btn-nav" id="next">
+              <span>Selanjutnya</span>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M9 18l6-6-6-6" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="dzikir-item">
+            <h3 id="judul" class="dzikir-title">Memuat...</h3>
+            <div id="arab" class="dzikir-arabic">Memuat dzikir...</div>
+            <details class="dzikir-translation">
+              <summary>Lihat Artinya</summary>
+              <p id="trans">Memuat terjemahan...</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/axios.min.js"></script>
+    <script src="js/dzikrpetang.js"></script>
+    <script>
+      function toggleTheme() {
+        const html = document.documentElement;
+        const currentTheme = html.getAttribute("data-theme");
+
+        if (currentTheme === "light") {
+          html.setAttribute("data-theme", "dark");
+          localStorage.setItem("theme", "dark");
+        } else {
+          html.setAttribute("data-theme", "light");
+          localStorage.setItem("theme", "light");
+        }
+      }
+
+      // Load saved theme
+      window.addEventListener("DOMContentLoaded", () => {
+        const savedTheme = localStorage.getItem("theme") || "light";
+        document.documentElement.setAttribute("data-theme", savedTheme);
+      });
+    </script>
+  </body>
+</html>
