@@ -1,0 +1,8 @@
+*.keystore
+release-signing.properties
+build.json
+matsuratApk.zip
+node_modules/
+platforms/android/.gradle/
+.gradle/
+local.properties

@@ -1,55 +1,37 @@
-# Al-Ma'tsurat — Dzikir Pagi & Petang
+# Al-Ma'tsurat — Morning & Evening Dhikr
 
-Aplikasi Android Cordova untuk membaca dzikir pagi dan petang (Al-Ma'tsurat) dengan tampilan modern dan minimalis.
+A Cordova Android app for reading morning and evening dhikr (Al-Ma'tsurat) with a modern, minimalist UI.
 
-## Fitur
+## Features
 
-- Dzikir pagi & petang lengkap dengan teks Arab, latin, dan terjemahan
-- Mode terang/gelap (toggle theme)
-- Font Arab (LPMQ IsepMisbah + Amiri)
-- Splash screen kustom
-- Ringan & offline
+- Complete morning & evening dhikr with Arabic text, transliteration, and translation
+- Light/dark mode toggle
+- Arabic fonts (LPMQ IsepMisbah + Amiri)
+- Custom splash screen
+- Lightweight & fully offline
 
-## Screenshot
+## Screenshots
 
-| Beranda | Dzikir Pagi | Tentang |
-|---------|-------------|---------|
-| ![Beranda](www/img/sc1.png) | ![Dzikir Pagi](www/img/sc2.png) | ![Tentang](www/img/sc3.png) |
+| Home | Morning Dhikr | About |
+|------|---------------|-------|
+| ![Home](www/img/sc1.png) | ![Morning Dhikr](www/img/sc2.png) | ![About](www/img/sc3.png) |
 
-## Tech Stack
-
-- [Apache Cordova](https://cordova.apache.org/) — wrapper Android
-- HTML + CSS + Vanilla JS — frontend
-- Plugin: `cordova-plugin-splashscreen`
-
-## Build
-
-```bash
-cordova build android
-```
-
-## Dev
-
-```bash
-cordova run android
-```
-
-## Struktur
+## Structure
 
 ```
 ├── www/              # Frontend (HTML, CSS, JS, assets)
-│   ├── index.html    # Beranda
+│   ├── index.html    # Home
 │   ├── dzikirpagi.html
 │   ├── dzikirpetang.html
 │   ├── about.html
-│   ├── source/       # Data dzikir (JSON)
-│   └── img/          # Screenshot, logo, favicon
+│   ├── source/       # Dhikr data (JSON)
+│   └── img/          # Screenshots, logo, favicon
 ├── assets/           # Icon & splash screen
-├── platforms/        # Platform Android
-├── plugins/          # Plugin Cordova
-└── config.xml        # Konfigurasi Cordova
+├── platforms/        # Android platform
+├── plugins/          # Cordova plugins
+└── config.xml        # Cordova config
 ```
 
-## Lisensi
+## License
 
 Apache-2.0 © [Lontarnesia / iairydev](https://github.com/iairydev)
