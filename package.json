@@ -13,7 +13,7 @@
   "author": "iairydev",
   "license": "Apache-2.0",
   "devDependencies": {
-    "cordova-android": "^14.0.1",
+    "cordova-android": "^15.1.0",
     "cordova-plugin-device": "^3.0.0",
     "cordova-plugin-local-notification": "^1.2.3",
     "cordova-plugin-splashscreen": "^6.0.0"
