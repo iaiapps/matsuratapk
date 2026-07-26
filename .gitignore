@@ -18,3 +18,6 @@ matsuratApk.zip
 # Gradle
 .gradle/
 local.properties
+
+# tools
+/.opencode

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pengaturan - Al-Ma'tsurat</title>
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+
+  <body>
+    <div class="dzikir-container">
+      <div class="card content-card">
+        <div class="card-header-nav">
+          <a href="index.html" class="back-button">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 12H5m7 7l-7-7 7-7" />
+            </svg>
+            <span>Beranda</span>
+          </a>
+          <h2 class="page-title">Pengaturan</h2>
+        </div>
+
+        <div class="settings-content">
+          <!-- Tema -->
+          <div class="settings-group">
+            <h3 class="settings-label">Tema</h3>
+            <div class="settings-options" id="theme-options">
+              <button class="settings-option" data-value="light">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="4" />
+                  <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32l1.41-1.41" />
+                </svg>
+                <span>Terang</span>
+              </button>
+              <button class="settings-option" data-value="dark">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                </svg>
+                <span>Gelap</span>
+              </button>
+              <button class="settings-option" data-value="auto">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 6v6l4 2" />
+                </svg>
+                <span>Otomatis</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Ukuran Teks Arab -->
+          <div class="settings-group">
+            <h3 class="settings-label">Ukuran Teks Arab</h3>
+            <div class="settings-options" id="arabic-size-options">
+              <button class="settings-option" data-value="S">
+                <span class="size-preview" style="font-size:0.75rem">Aa</span>
+                <span>S</span>
+              </button>
+              <button class="settings-option" data-value="M">
+                <span class="size-preview" style="font-size:0.9375rem">Aa</span>
+                <span>M</span>
+              </button>
+              <button class="settings-option" data-value="L">
+                <span class="size-preview" style="font-size:1.125rem">Aa</span>
+                <span>L</span>
+              </button>
+              <button class="settings-option" data-value="XL">
+                <span class="size-preview" style="font-size:1.3125rem">Aa</span>
+                <span>XL</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Ukuran Teks Terjemahan -->
+          <div class="settings-group">
+            <h3 class="settings-label">Ukuran Teks Terjemahan</h3>
+            <div class="settings-options" id="translation-size-options">
+              <button class="settings-option" data-value="S">
+                <span class="size-preview" style="font-size:0.6875rem">Aa</span>
+                <span>S</span>
+              </button>
+              <button class="settings-option" data-value="M">
+                <span class="size-preview" style="font-size:0.8125rem">Aa</span>
+                <span>M</span>
+              </button>
+              <button class="settings-option" data-value="L">
+                <span class="size-preview" style="font-size:0.9375rem">Aa</span>
+                <span>L</span>
+              </button>
+              <button class="settings-option" data-value="XL">
+                <span class="size-preview" style="font-size:1.0625rem">Aa</span>
+                <span>XL</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Notifikasi -->
+          <div class="settings-group">
+            <h3 class="settings-label">Notifikasi Pengingat</h3>
+            <div class="settings-toggle-row">
+              <span>Dzikir Pagi</span>
+              <label class="toggle-switch">
+                <input type="checkbox" id="notif-pagi" />
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+            <div class="settings-time-row" id="time-pagi-row">
+              <label for="time-pagi">Waktu</label>
+              <input type="time" id="time-pagi" value="05:30" />
+            </div>
+
+            <div class="settings-toggle-row" style="margin-top:1rem">
+              <span>Dzikir Petang</span>
+              <label class="toggle-switch">
+                <input type="checkbox" id="notif-petang" />
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+            <div class="settings-time-row" id="time-petang-row">
+              <label for="time-petang">Waktu</label>
+              <input type="time" id="time-petang" value="17:00" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <p class="version">versi 1.3.0</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="cordova.js"></script>
+    <script src="js/settings.js"></script>
+  </body>
+</html>
